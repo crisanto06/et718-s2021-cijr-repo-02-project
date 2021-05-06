@@ -1,0 +1,38 @@
+<nav class="top-bar topbar-responsive">
+  <div class="top-bar-title">
+    <a class="topbar-responsive-logo" href="#"><strong>My Project</strong></a>
+  </div>
+  <div id="topbar-responsive" class="topbar-responsive-links">
+    <div class="top-bar-right">
+      <ul class="menu simple vertical medium-horizontal">
+        <li><%= link_to 'Home', welcome_index_path %></li>
+        <li><%= link_to 'About', about_index_path %></li>
+        <li><%= link_to 'My Blog', controller: 'articles' %></li>
+        <li><%= link_to 'Experience', new_article_path %></li>
+        <li><%= link_to 'Contact', welcome_contact_path %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<br>
+
+<form class="callout text-center">
+  <h2>Become A Member</h2>
+  <div class="floated-label-wrapper">
+    <label for="full-name">Full name</label>
+    <input type="text" id="full-name" name="full name input" placeholder="Full name">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email input" placeholder="Email">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="password input" placeholder="Password">
+  </div>
+  <input class="button expanded" type="submit" value="Sign up">
+</form>
+

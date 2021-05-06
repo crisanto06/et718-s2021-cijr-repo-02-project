@@ -1,0 +1,33 @@
+<nav class="top-bar topbar-responsive">
+  <div class="top-bar-title">
+    <a class="topbar-responsive-logo" href="#"><strong>My Project</strong></a>
+  </div>
+  <div id="topbar-responsive" class="topbar-responsive-links">
+    <div class="top-bar-right">
+      <ul class="menu simple vertical medium-horizontal">
+        <li><%= link_to 'Home', welcome_index_path %></li>
+        <li><%= link_to 'About', about_index_path %></li>
+        <li><%= link_to 'My Blog', controller: 'articles' %></li>
+        <li><%= link_to 'Experience', new_article_path %></li>
+        <li><%= link_to 'Contact', welcome_contact_path %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<h1>Hello, Rails!</h1>
+<p>Created by: <h3><b>Crisanto Ignacio Jr</b></h3></p>
+<p>This is my practice run on how to create a webpage using Ruby on Rails!</p>
+<%= link_to 'My Blog', controller: 'articles' %>
+
+
+
+
+<table>
+    <tr>
+        <td><%= link_to 'My Blog', controller: 'articles' %></td>
+        <td><%= link_to 'New article', new_article_path %></td>
+        <td><%= link_to 'Contact', welcome_contact_path %></td>
+    </tr>
+</table>
